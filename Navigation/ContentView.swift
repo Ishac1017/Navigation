@@ -14,16 +14,24 @@ struct ContentView: View {
                 Text("This is the root view  🌳")
                 
                 NavigationLink(destination: SecondView()) {
-                    Text("Click me!")
+                    Image("dog")
                 }
                 //end nav link
                 
-                NavigationLink(destination: Text("Hellooo")
-                    .font(.title)
-                    .foregroundColor(Color.purple)) {
-                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Label Content@*/Text("Navigate")/*@END_MENU_TOKEN@*/
+                
+                NavigationLink(destination: Help()) {
+                    Image("Help Link 🙏")
                 }
                 //end nav link
+                
+                NavigationLink(destination: Contact()) {
+                    Text("Contact link")
+                }
+                
+                NavigationLink(destination: About()) {
+                    Text("About link")
+                }
+                
             }
             //end vstack
             .navigationTitle(Text("Home"))
