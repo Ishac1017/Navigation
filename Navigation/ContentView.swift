@@ -20,7 +20,7 @@ struct ContentView: View {
                 
                 
                 NavigationLink(destination: Help()) {
-                    Image("Help Link 🙏")
+                    Text("Help Link 🙏")
                 }
                 //end nav link
                 

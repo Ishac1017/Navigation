@@ -11,6 +11,7 @@ struct Help: View {
     var body: some View {
         Text("This is Help View")
     }
+    
 }
 
 #Preview {
